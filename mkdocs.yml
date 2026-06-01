@@ -1,6 +1,9 @@
 site_name: MoonLoader Wiki
+site_description: Полная неофициальная документация, справочник API функций, опкодов и руководств по Lua-скриптингу для MoonLoader в SA-MP.
+site_author: mgmoldova
 site_url: https://mgmoldova.github.io/moonloader-wiki/ 
 repo_url: https://github.com/mgmoldova/moonloader-wiki 
+repo_name: mgmoldova/moonloader-wiki
 
 theme:
   name: material
@@ -8,36 +11,46 @@ theme:
   icon:
     repo: fontawesome/brands/github
   palette:
+    # Светлая тема
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep blue
-      accent: deep blue
+      primary: indigo # Благородный глубокий синий
+      accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Перейти на темную тему
+    # Темная тема
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep blue
-      accent: deep blue
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Перейти на светлую тему
 
-  
   features:
-    - navigation.tabs          
-    - navigation.sections      
-    - navigation.top           
-    - navigation.tracking      
-    - search.suggest          
-    - search.highlight         
-    - content.code.copy        
+    - navigation.tabs          # Верхнее меню (как на современных сайтах)
+    - navigation.sections      # Визуальное разделение бокового меню на блоки
+    - navigation.top           # Кнопка быстрой прокрутки вверх
+    - navigation.tracking      # URL меняется автоматически при скролле к заголовкам
+    - navigation.indexes       # Позволяет делать разделы меню кликабельными страницами
+    - search.suggest           # Живой поиск на лету
+    - search.highlight         # Подсветка найденных слов
+    - search.share             # Кнопка "поделиться результатом поиска"
+    - content.code.copy        # Кнопка копирования кода
+    - content.code.annotate    # Аннотации прямо в строках кода (очень удобно для разбора API)
 
 plugins:
   - search
+  - sitemap:                   # Автоматическая генерация sitemap.xml для поисковиков
+      changefreq: daily
+      priority: 1.0
 
 markdown_extensions:
-  - tables                     
+  - tables 
+  - attr_list                  # Позволяет добавлять кастомные CSS-классы к тексту
+  - def_list                   # Удобные списки определений
+  - md_in_html                 # Позволяет смешивать HTML и Markdown, если нужно
   - pymdownx.highlight:        
       anchor_linenums: true
       line_spans: __span
@@ -47,3 +60,7 @@ markdown_extensions:
       alternate_style: true    
   - admonition                 
   - pymdownx.details           
+  - pymdownx.magiclink         # Автоматически делает "голые" ссылки кликабельными
+  - pymdownx.emoji:            # Поддержка красивых нативных эмодзи (например, :sparkles:)
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
