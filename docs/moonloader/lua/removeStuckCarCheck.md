@@ -1,0 +1,23 @@
+# removeStuckCarCheck
+
+Функция `removeStuckCarCheck` из API MoonLoader.
+
+---
+
+## Синтаксис
+
+```lua
+removeStuckCarCheck(Vehicle car)
+```
+
+## Параметры
+
+| Тип | Название | Описание |
+| :--- | :--- | :--- |
+| `Vehicle` | `car` | описание |
+
+## Возвращаемые значения
+
+Нет возвращаемых значений
+
+

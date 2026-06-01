@@ -1,0 +1,30 @@
+# locateCharOnFoot2d
+
+Функция `locateCharOnFoot2d` из API MoonLoader.
+
+---
+
+## Синтаксис
+
+```lua
+bool result = locateCharOnFoot2d(Ped ped, float pointX, float pointY, float radiusX, float radiusY, bool sphere)
+```
+
+## Параметры
+
+| Тип | Название | Описание |
+| :--- | :--- | :--- |
+| `Ped` | `ped` | описание |
+| `float` | `pointX` | описание |
+| `float` | `pointY` | описание |
+| `float` | `radiusX` | описание |
+| `float` | `radiusY` | описание |
+| `bool` | `sphere` | описание |
+
+## Возвращаемые значения
+
+| Тип | Название | Описание |
+| :--- | :--- | :--- |
+| `bool` | `result` | описание |
+
+

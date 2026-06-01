@@ -1,0 +1,23 @@
+# sampIsChatVisible
+
+Функция `sampIsChatVisible` из API MoonLoader.
+
+---
+
+## Синтаксис
+
+```lua
+bool result = sampIsChatVisible()
+```
+
+## Параметры
+
+Нет параметров
+
+## Возвращаемые значения
+
+| Тип | Название | Описание |
+| :--- | :--- | :--- |
+| `bool` | `result` | описание |
+
+
