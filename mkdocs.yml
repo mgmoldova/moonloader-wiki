@@ -4,6 +4,7 @@ site_author: mgmoldova
 site_url: https://mgmoldova.github.io/moonloader-wiki/ 
 repo_url: https://github.com/mgmoldova/moonloader-wiki 
 repo_name: mgmoldova/moonloader-wiki
+edit_uri: edit/main/docs/
 
 theme:
   name: material
