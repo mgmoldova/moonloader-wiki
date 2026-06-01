@@ -1,6 +1,6 @@
 # Справочник API MoonLoader
 
-Здесь перечислены все глобальные функции, события, переменные и константы, которые MoonLoader добавляет для Lua-скриптов. 
+Здесь перечислены все глобальные функции, события, переменные и константы, которые MoonLoader добавляет для Lua-скриптов.
 
 !!! tip "Фильтрация и поиск"
     Вы можете воспользоваться глобальным поиском в правом верхнем углу сайта, чтобы мгновенно найти нужную функцию по её названию или возвращаемому типу. Для категорий используйте теги: `функции`, `события`, `переменные`, `константы`, `классы`.
@@ -11,14 +11,18 @@
     Если ссылка на функцию ведет на несуществующую страницу (выделена красным), это означает, что статья для неё ещё не написана. В таком случае синтаксис и особенности работы функции рекомендуется искать в документации **Sanny Builder**.
 
 ---
+
 ## Глобальные функции (Lua)
-[`bool result = isCursorActive()`](lua/isCursorActive.md)
-[`table pickups = getAllPickups()`](lua/getAllPickups.md)
-int handle = getPickupPointerHandle(Pickup pickup)
-int pointer = getPickupPointer(Pickup pickup)
-int type = getPickupType(Pickup pickup)
-int model = getPickupModel(Pickup pickup)
-float x, float y, float z, float w = getObjectQuaternion(Object object)
+
+|[`bool result = isCursorActive()`](lua/isCursorActive.md)|
+|[`table pickups = getAllPickups()`](lua/getAllPickups.md)|
+|[`int handle = getPickupPointerHandle(Pickup pickup)`](lua/getPickupPointerHandle.md)|
+|[`int pointer = getPickupPointer(Pickup pickup)`](lua/getPickupPointer.md)|
+|[`int type = getPickupType(Pickup pickup)`](lua/getPickupType.md)|
+|[`int model = getPickupModel(Pickup pickup)`](lua/getPickupModel.md)|
+|[`float x, float y, float z, float w = getObjectQuaternion(Object object)`](lua/getObjectQuaternion.md)|
+
+```lua
 setObjectQuaternion(Object object, float x, float y, float z, float w)
 float x, float y, float z, float w = getVehicleQuaternion(Vehicle car)
 setVehicleQuaternion(Vehicle car, float x, float y, float z, float w)
@@ -1972,3 +1976,4 @@ Ped PLAYER_PED
 Player PLAYER_HANDLE
 Ped playerPed
 Player playerHandle
+```
