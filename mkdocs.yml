@@ -40,7 +40,9 @@ theme:
     - search.share             # Кнопка "поделиться результатом поиска"
     - content.code.copy        # Кнопка копирования кода
     - content.code.annotate    # Аннотации прямо в строках кода (очень удобно для разбора API)
-
+    - content.action.edit      # Кнопка "Редактировать" на каждой странице
+    - content.action.view      # Опционально: кнопка "Просмотреть исходник"
+      
 plugins:
   - search
 
